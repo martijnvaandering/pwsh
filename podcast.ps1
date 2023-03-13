@@ -3,7 +3,7 @@ $downloadPath = "/tmp/podcasts/"
 
 # Haal RSS-feed op
 $response = Invoke-WebRequest $url
-$feed = [xml]$reponse.Content
+$feed = [xml]$response.Content
 
 # Loop door elke item in de feed en download de bijbehorende MP3
 foreach ($item in $feed.rss.channel.item) {

@@ -8,4 +8,5 @@ Write-Host "Press any key to continue..."
 $x = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 clear
 @('Shell','Terminal','CLI',"??") | foreach { figlet -w $(tput cols) -c $_}
+cd /tmp
 pwsh
